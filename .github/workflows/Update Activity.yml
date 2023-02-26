@@ -1,0 +1,19 @@
+name: README UPDATE WITH ACTIVITY
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: gautamkrishnar/blog-post-workflow@master
+        with:
+          comment_tag_name: "ACTIVITY-LIST"
+          feed_list: "https://github.com/AymanZahran.atom"
+          readme_path: "README.md"
+          commit_message: "updated recent activity"
+          committer_username: "auto update using github actions"
