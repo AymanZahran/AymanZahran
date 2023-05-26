@@ -462,7 +462,6 @@ I can help you achieve faster software delivery, improved reliability, and reduc
 - [AymanZahran forked AymanZahran/terraform-azurerm-db-sql from claranet/terraform-azurerm-db-sql](https://github.com/AymanZahran/terraform-azurerm-db-sql)
 - [AymanZahran pushed to main in AymanZahran/AymanZahran](https://github.com/AymanZahran/AymanZahran/compare/6cefaeb5eb...0bcdd7c6ef)
 - [AymanZahran starred klothoplatform/klotho](https://github.com/klothoplatform/klotho)
-- [AymanZahran added Bunningss to AymanZahran/AymanZahran](https://github.com/AymanZahran/AymanZahran)
 <!-- ACTIVITY-LIST:END -->
 
 </details>
