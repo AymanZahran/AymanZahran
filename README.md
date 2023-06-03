@@ -459,7 +459,6 @@ I can help you achieve faster software delivery, improved reliability, and reduc
 
 <!-- ACTIVITY-LIST:START -->
 - [AymanZahran forked AymanZahran/MVP-Site from Sitecore/MVP-Site](https://github.com/AymanZahran/MVP-Site)
-- [AymanZahran forked AymanZahran/terraform-azurerm-db-sql from claranet/terraform-azurerm-db-sql](https://github.com/AymanZahran/terraform-azurerm-db-sql)
 <!-- ACTIVITY-LIST:END -->
 
 </details>
