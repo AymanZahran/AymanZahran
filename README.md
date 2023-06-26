@@ -458,6 +458,9 @@ I can help you achieve faster software delivery, improved reliability, and reduc
 <summary><strong> :zap: My Recent Activities </strong></summary>
 
 <!-- ACTIVITY-LIST:START -->
+- [AymanZahran pushed to main in AymanZahran/gitops-certification-examples](https://github.com/AymanZahran/gitops-certification-examples/compare/93ee1e4b56...41af0eaa8f)
+- [AymanZahran pushed to main in AymanZahran/gitops-certification-examples](https://github.com/AymanZahran/gitops-certification-examples/compare/76ba617f4c...93ee1e4b56)
+- [AymanZahran pushed to main in AymanZahran/gitops-certification-examples](https://github.com/AymanZahran/gitops-certification-examples/compare/c89b02b341...76ba617f4c)
 - [AymanZahran forked AymanZahran/MVP-Site from Sitecore/MVP-Site](https://github.com/AymanZahran/MVP-Site)
 <!-- ACTIVITY-LIST:END -->
 
