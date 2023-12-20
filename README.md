@@ -462,7 +462,6 @@ I can help you achieve faster software delivery, improved reliability, and reduc
 - [AymanZahran starred aws-samples/radiology-worklist-ich-detection](https://github.com/aws-samples/radiology-worklist-ich-detection)
 - [AymanZahran starred mbonig/reinvent](https://github.com/mbonig/reinvent)
 - [AymanZahran commented on issue tektoncd/operator#1705](https://github.com/tektoncd/operator/issues/1705#issuecomment-1724885264)
-- [AymanZahran opened an issue in tektoncd/operator](https://github.com/tektoncd/operator/issues/1705)
 <!-- ACTIVITY-LIST:END -->
 
 </details>
