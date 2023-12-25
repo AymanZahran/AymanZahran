@@ -458,9 +458,11 @@ I can help you achieve faster software delivery, improved reliability, and reduc
 <summary><strong> :zap: My Recent Activities </strong></summary>
 
 <!-- ACTIVITY-LIST:START -->
+- [AymanZahran pushed to main in AymanZahran/ebook-generator-with-openapi](https://github.com/AymanZahran/ebook-generator-with-openapi/compare/476116c9a7...ba3ced266d)
+- [AymanZahran created a branch main in AymanZahran/ebook-generator-with-openapi](https://github.com/AymanZahran/ebook-generator-with-openapi/compare/main)
+- [AymanZahran created a repository AymanZahran/ebook-generator-with-openapi](https://github.com/AymanZahran/ebook-generator-with-openapi//)
 - [AymanZahran starred awslabs/generative-ai-cdk-constructs](https://github.com/awslabs/generative-ai-cdk-constructs)
 - [AymanZahran starred aws-samples/radiology-worklist-ich-detection](https://github.com/aws-samples/radiology-worklist-ich-detection)
-- [AymanZahran starred mbonig/reinvent](https://github.com/mbonig/reinvent)
 <!-- ACTIVITY-LIST:END -->
 
 </details>
