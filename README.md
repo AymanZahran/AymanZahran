@@ -458,11 +458,11 @@ I can help you achieve faster software delivery, improved reliability, and reduc
 <summary><strong> :zap: My Recent Activities </strong></summary>
 
 <!-- ACTIVITY-LIST:START -->
+- [AymanZahran opened an issue in tigera/operator](https://github.com/tigera/operator/issues/3223)
 - [AymanZahran pushed to test-Qodana in AymanZahran/multi-cloud-k8s-boilerplate](https://github.com/AymanZahran/multi-cloud-k8s-boilerplate/compare/8f2c2dfd25...8a05f679b2)
 - [AymanZahran opened a pull request in AymanZahran/multi-cloud-k8s-boilerplate](https://github.com/AymanZahran/multi-cloud-k8s-boilerplate/pull/66)
 - [AymanZahran created a branch test-Qodana in AymanZahran/multi-cloud-k8s-boilerplate](https://github.com/AymanZahran/multi-cloud-k8s-boilerplate/compare/test-Qodana)
 - [AymanZahran pushed to main in AymanZahran/ebook-generator-with-openapi](https://github.com/AymanZahran/ebook-generator-with-openapi/compare/476116c9a7...ba3ced266d)
-- [AymanZahran created a branch main in AymanZahran/ebook-generator-with-openapi](https://github.com/AymanZahran/ebook-generator-with-openapi/compare/main)
 <!-- ACTIVITY-LIST:END -->
 
 </details>
