@@ -458,6 +458,9 @@ I can help you achieve faster software delivery, improved reliability, and reduc
 <summary><strong> :zap: My Recent Activities </strong></summary>
 
 <!-- ACTIVITY-LIST:START -->
+- [AymanZahran pushed to main in AymanZahran/cloud-native-ci-cd](https://github.com/AymanZahran/cloud-native-ci-cd/compare/1f8d6ab9f6...8f3effff89)
+- [AymanZahran created a branch main in AymanZahran/cloud-native-ci-cd](https://github.com/AymanZahran/cloud-native-ci-cd/compare/main)
+- [AymanZahran created a repository AymanZahran/cloud-native-ci-cd](https://github.com/AymanZahran/cloud-native-ci-cd//)
 - [AymanZahran pushed to main in AymanZahran/LFS256-code](https://github.com/AymanZahran/LFS256-code/compare/a34ad56115...e2218bef84)
 - [AymanZahran forked AymanZahran/LFS256-code from lftraining/LFS256-code](https://github.com/AymanZahran/LFS256-code)
 <!-- ACTIVITY-LIST:END -->
