@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayman Zahran — Tech Lead · Cloud/DevOps/Platform/SRE Engineer</title>
+  <meta name="description" content="Ayman Zahran — Tech Lead, Kubestronaut, AWS Community Builder. Expert in Kubernetes, GitOps, multi-cloud IaC, and DevOps automation. 11x AWS, 7x CNCF, 6x Azure certified." />
+  <meta name="keywords" content="Ayman Zahran, DevOps, Kubernetes, AWS, Cloud Engineer, SRE, GitOps, Terraform, Cairo Egypt" />
+  <meta name="author" content="Ayman Zahran" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://aymanzahran.com/" />
+  <meta property="og:title" content="Ayman Zahran — Tech Lead · Cloud/DevOps/Platform/SRE" />
+  <meta property="og:description" content="Kubestronaut · 11x AWS · MBA/DBA · 'Achieve more by doing less through intelligent automation.'" />
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/AymanZahran" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@ay_zahran" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://aymanzahran.com/" />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50:  '#eff6ff',
+              100: '#dbeafe',
+              200: '#bfdbfe',
+              300: '#93c5fd',
+              400: '#60a5fa',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#1e3a8a',
+            },
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          animation: {
+            'fade-in': 'fadeIn 0.6s ease-out',
+            'slide-up': 'slideUp 0.6s ease-out',
+          },
+          keyframes: {
+            fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
+            slideUp: { '0%': { opacity: '0', transform: 'translateY(20px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    html { scroll-behavior: smooth; }
+    .gradient-text { background: linear-gradient(135deg, #3b82f6, #8b5cf6, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .hero-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0c1a3a 100%); }
+    .card-hover { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .card-hover:hover { transform: translateY(-2px); box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15); }
+    .badge { display: inline-flex; align-items: center; padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 500; }
+    details > summary { list-style: none; }
+    details > summary::-webkit-details-marker { display: none; }
+    details[open] > summary .chevron { transform: rotate(180deg); }
+    .chevron { transition: transform 0.2s ease; }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #0f172a; }
+    ::-webkit-scrollbar-thumb { background: #3b82f6; border-radius: 3px; }
+    .nav-link { position: relative; }
+    .nav-link::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 2px; background: #3b82f6; transition: width 0.2s ease; }
+    .nav-link:hover::after { width: 100%; }
+  </style>
+</head>
+
+<body class="bg-slate-950 text-slate-100 font-sans antialiased dark">
+
+  <!-- Navigation -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-slate-950/80 backdrop-blur-xl border-b border-slate-800/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="#home" class="font-mono text-brand-400 font-semibold text-sm">az@cloud:~$</a>
+        <div class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#about" class="nav-link text-slate-400 hover:text-white transition-colors">About</a>
+          <a href="#experience" class="nav-link text-slate-400 hover:text-white transition-colors">Experience</a>
+          <a href="#certifications" class="nav-link text-slate-400 hover:text-white transition-colors">Certs</a>
+          <a href="#skills" class="nav-link text-slate-400 hover:text-white transition-colors">Skills</a>
+          <a href="#education" class="nav-link text-slate-400 hover:text-white transition-colors">Education</a>
+          <a href="#community" class="nav-link text-slate-400 hover:text-white transition-colors">Community</a>
+          <a href="#contact" class="nav-link text-slate-400 hover:text-white transition-colors">Contact</a>
+        </div>
+        <div class="flex items-center gap-3">
+          <a href="resume.pdf" download class="hidden sm:flex items-center gap-1.5 bg-brand-600 hover:bg-brand-500 text-white text-xs font-medium px-3 py-1.5 rounded-full transition-colors">
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+            Resume
+          </a>
+          <!-- Mobile menu button -->
+          <button id="menuBtn" class="md:hidden p-2 text-slate-400 hover:text-white">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-slate-900 border-t border-slate-800 px-4 py-3 space-y-2">
+      <a href="#about" class="block text-slate-400 hover:text-white py-1 text-sm">About</a>
+      <a href="#experience" class="block text-slate-400 hover:text-white py-1 text-sm">Experience</a>
+      <a href="#certifications" class="block text-slate-400 hover:text-white py-1 text-sm">Certifications</a>
+      <a href="#skills" class="block text-slate-400 hover:text-white py-1 text-sm">Skills</a>
+      <a href="#education" class="block text-slate-400 hover:text-white py-1 text-sm">Education</a>
+      <a href="#community" class="block text-slate-400 hover:text-white py-1 text-sm">Community</a>
+      <a href="#contact" class="block text-slate-400 hover:text-white py-1 text-sm">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-gradient min-h-screen flex items-center relative overflow-hidden pt-16">
+    <!-- Background decoration -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute -top-40 -right-40 w-80 h-80 bg-brand-600/10 rounded-full blur-3xl"></div>
+      <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-purple-600/10 rounded-full blur-3xl"></div>
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-cyan-600/5 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
+      <div class="flex flex-col lg:flex-row items-center gap-12">
+        <!-- Text content -->
+        <div class="flex-1 text-center lg:text-left animate-fade-in">
+          <div class="inline-flex items-center gap-2 bg-slate-800/60 border border-slate-700/50 rounded-full px-4 py-1.5 text-xs text-slate-400 mb-6">
+            <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+            Available for remote opportunities
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight">
+            Ayman Zahran
+          </h1>
+          <h2 class="text-xl sm:text-2xl font-medium mb-6">
+            <span class="gradient-text">Tech Lead · Cloud/DevOps/Platform/SRE</span>
+          </h2>
+
+          <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 mb-6 leading-relaxed">
+            Kubestronaut · 11× AWS Certified · MBA/DBA · AWS Community Builder<br/>
+            <span class="font-mono text-brand-400 text-sm">"Achieve more by doing less — automate everything."</span>
+          </p>
+
+          <!-- Cert badges row -->
+          <div class="flex flex-wrap justify-center lg:justify-start gap-2 mb-8">
+            <span class="badge bg-orange-500/10 text-orange-300 border border-orange-500/20">11× AWS</span>
+            <span class="badge bg-blue-500/10 text-blue-300 border border-blue-500/20">6× Azure</span>
+            <span class="badge bg-cyan-500/10 text-cyan-300 border border-cyan-500/20">Kubestronaut 7×</span>
+            <span class="badge bg-purple-500/10 text-purple-300 border border-purple-500/20">3× HashiCorp</span>
+            <span class="badge bg-gray-500/10 text-gray-300 border border-gray-500/20">4× VMware</span>
+            <span class="badge bg-green-500/10 text-green-300 border border-green-500/20">MBA · DBA</span>
+          </div>
+
+          <!-- CTA buttons -->
+          <div class="flex flex-wrap justify-center lg:justify-start gap-3">
+            <a href="resume.pdf" download class="flex items-center gap-2 bg-brand-600 hover:bg-brand-500 text-white font-semibold px-5 py-2.5 rounded-xl transition-all hover:scale-105">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+              Download Resume
+            </a>
+            <a href="linkedin-copy.pdf" download class="flex items-center gap-2 bg-[#0A66C2]/20 hover:bg-[#0A66C2]/40 text-blue-300 border border-blue-500/30 font-semibold px-5 py-2.5 rounded-xl transition-all hover:scale-105">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn PDF
+            </a>
+            <a href="https://calendly.com/ayman-zahran/catch-up" target="_blank" rel="noopener" class="flex items-center gap-2 bg-slate-700/50 hover:bg-slate-700 text-slate-200 border border-slate-600/50 font-semibold px-5 py-2.5 rounded-xl transition-all hover:scale-105">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+              Schedule Call
+            </a>
+          </div>
+        </div>
+
+        <!-- Profile image / stats -->
+        <div class="flex-shrink-0 animate-slide-up">
+          <div class="relative">
+            <div class="w-64 h-64 sm:w-72 sm:h-72 rounded-2xl overflow-hidden border-2 border-brand-500/30 shadow-2xl shadow-brand-500/10">
+              <img src="https://avatars.githubusercontent.com/u/65544967?v=4" alt="Ayman Zahran" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+              <div class="hidden w-full h-full bg-gradient-to-br from-brand-600 to-purple-700 items-center justify-center text-6xl font-bold text-white">AZ</div>
+            </div>
+            <!-- Floating stats -->
+            <div class="absolute -bottom-4 -right-4 bg-slate-800 border border-slate-700 rounded-xl px-3 py-2 text-center shadow-xl">
+              <div class="text-2xl font-bold text-brand-400">30+</div>
+              <div class="text-xs text-slate-400">Certs</div>
+            </div>
+            <div class="absolute -top-4 -left-4 bg-slate-800 border border-slate-700 rounded-xl px-3 py-2 text-center shadow-xl">
+              <div class="text-2xl font-bold text-green-400">6+</div>
+              <div class="text-xs text-slate-400">Yrs Exp</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social links -->
+      <div class="flex justify-center lg:justify-start gap-4 mt-12">
+        <a href="https://github.com/AymanZahran" target="_blank" rel="noopener" class="text-slate-500 hover:text-white transition-colors">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/ay-zahran/" target="_blank" rel="noopener" class="text-slate-500 hover:text-[#0A66C2] transition-colors">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://twitter.com/ay_zahran" target="_blank" rel="noopener" class="text-slate-500 hover:text-[#1DA1F2] transition-colors">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+        </a>
+        <a href="https://dev.to/aymanzahran" target="_blank" rel="noopener" class="text-slate-500 hover:text-white transition-colors">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M7.42 10.05c-.18-.16-.46-.23-.84-.23H6l.02 2.44.04 2.45.56-.02c.41 0 .63-.07.83-.26.24-.24.26-.36.26-2.2 0-1.91-.02-1.96-.29-2.18zM0 4.94v14.12h24V4.94H0zM8.56 15.3c-.44.58-1.06.77-2.53.77H4.71V8.53h1.4c1.67 0 2.16.18 2.6.9.27.43.29.6.32 2.57.05 2.23-.02 2.73-.47 3.3zm5.09-5.47h-2.47v1.77h1.52v1.28l-.72.04-.75.03v1.77l1.22.03 1.2.04v1.28h-1.6c-1.53 0-1.6-.01-1.87-.3l-.3-.28v-3.16c0-3.02.01-3.18.25-3.48.23-.31.25-.31 1.88-.31h1.64v1.29zm4.68 5.45c-.17.43-.64.79-1 .79-.18 0-.45-.15-.67-.39-.32-.32-.45-.63-.82-2.08l-.9-3.39-.45-1.67h.76c.4 0 .75.02.75.05 0 .06 1.16 4.54 1.26 4.83.04.15.32-.7.73-2.3l.63-2.54h.76c.41 0 .75.01.75.03 0 .02-.34 1.1-.76 2.4-.92 2.86-1 3.12-1.27 3.79z"/></svg>
+        </a>
+        <a href="https://www.credly.com/users/ayman-hatem-zahran/badges" target="_blank" rel="noopener" class="text-slate-500 hover:text-orange-400 transition-colors">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0L1.5 6v12L12 24l10.5-6V6L12 0zm0 2.31l8.5 4.9v9.58L12 21.69l-8.5-4.9V7.21L12 2.31z"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-slate-900">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-bold text-white mb-2">About Me</h2>
+      <div class="w-16 h-1 bg-brand-500 rounded mb-10"></div>
+
+      <div class="grid lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2 space-y-4 text-slate-300 leading-relaxed">
+          <p>I'm a Tech Lead and Cloud/DevOps/SRE engineer with 6+ years building enterprise-grade infrastructure that <em>actually runs itself</em>. My work spans Kubernetes at scale, multi-cloud GitOps workflows, infrastructure as code, and CI/CD automation — always with a bias toward automation that eliminates toil and accelerates delivery.</p>
+          <p>I hold <strong class="text-white">11 AWS certifications</strong> including both Professional-level tracks, am a <strong class="text-white">Kubestronaut</strong> (CNCF's highest recognition for holding all 5 Kubernetes certs + 2 more), and have deep hands-on experience across AWS, Azure, and GCP platforms. I'm currently pursuing a DBA in AI & Freelance Platforms, exploring how autonomous AI agents are reshaping the future of work.</p>
+          <p>My core philosophy: <strong class="text-white">"Achieve more by doing less"</strong> — by building systems that are self-healing, observable, and driven by code. I believe AI's true power lies in augmenting human capability, not replacing it.</p>
+          <div class="flex flex-wrap gap-2 pt-2">
+            <span class="bg-slate-800 text-brand-300 px-3 py-1 rounded-lg text-sm border border-slate-700">🌍 Cairo, Egypt</span>
+            <span class="bg-slate-800 text-brand-300 px-3 py-1 rounded-lg text-sm border border-slate-700">🌐 Remote-First</span>
+            <span class="bg-slate-800 text-brand-300 px-3 py-1 rounded-lg text-sm border border-slate-700">✉️ ah.zahran@outlook.com</span>
+          </div>
+        </div>
+        <div class="space-y-4">
+          <div class="bg-slate-800/50 border border-slate-700/50 rounded-2xl p-5">
+            <h3 class="text-white font-semibold mb-4">Quick Stats</h3>
+            <div class="grid grid-cols-2 gap-3">
+              <div class="text-center p-3 bg-slate-700/30 rounded-xl">
+                <div class="text-2xl font-bold text-brand-400">30+</div>
+                <div class="text-xs text-slate-400 mt-1">Certifications</div>
+              </div>
+              <div class="text-center p-3 bg-slate-700/30 rounded-xl">
+                <div class="text-2xl font-bold text-green-400">6+</div>
+                <div class="text-xs text-slate-400 mt-1">Years Exp</div>
+              </div>
+              <div class="text-center p-3 bg-slate-700/30 rounded-xl">
+                <div class="text-2xl font-bold text-purple-400">99.95%</div>
+                <div class="text-xs text-slate-400 mt-1">Uptime SLA</div>
+              </div>
+              <div class="text-center p-3 bg-slate-700/30 rounded-xl">
+                <div class="text-2xl font-bold text-orange-400">1K+</div>
+                <div class="text-xs text-slate-400 mt-1">Daily Pipelines</div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-slate-800/50 border border-slate-700/50 rounded-2xl p-5">
+            <h3 class="text-white font-semibold mb-3">Languages</h3>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between"><span class="text-slate-300">Arabic</span><span class="text-green-400">Native</span></div>
+              <div class="flex justify-between"><span class="text-slate-300">English</span><span class="text-brand-400">Professional</span></div>
+              <div class="flex justify-between"><span class="text-slate-300">French</span><span class="text-slate-500">Elementary</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="py-20 bg-slate-950">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-bold text-white mb-2">Experience</h2>
+      <div class="w-16 h-1 bg-brand-500 rounded mb-10"></div>
+
+      <div class="space-y-4">
+
+        <!-- Virtasant Tech Lead -->
+        <div class="card-hover bg-slate-800/40 border border-slate-700/50 rounded-2xl overflow-hidden">
+          <details>
+            <summary class="flex items-start gap-4 p-6 cursor-pointer select-none">
+              <div class="w-10 h-10 rounded-xl bg-brand-600/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-5 h-5 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+              </div>
+              <div class="flex-1 min-w-0">
+                <div class="flex flex-wrap items-start justify-between gap-2">
+                  <div>
+                    <h3 class="text-white font-semibold text-lg">Tech Lead</h3>
+                    <p class="text-brand-400 font-medium">Virtasant</p>
+                  </div>
+                  <div class="text-right flex-shrink-0">
+                    <span class="text-sm text-slate-400">Oct 2023 – Present</span>
+                    <p class="text-xs text-green-400">Austin, TX (Remote) · Current</p>
+                  </div>
+                </div>
+              </div>
+              <svg class="chevron w-5 h-5 text-slate-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </summary>
+            <div class="px-6 pb-6 pt-0">
+              <ul class="space-y-2 text-slate-300 text-sm pl-4">
+                <li class="relative before:absolute before:-left-3 before:top-2 before:w-1.5 before:h-1.5 before:bg-brand-400 before:rounded-full">Led migration strategy from cloud provider to private cloud platform, architecting multi-account infrastructure migration for improved resource allocation and expanded IP space.</li>
+                <li class="relative before:absolute before:-left-3 before:top-2 before:w-1.5 before:h-1.5 before:bg-brand-400 before:rounded-full">Directed team of 4–5 SREs managing CI/CD infrastructure supporting <strong class="text-white">1,000+ daily pipeline executions</strong>, establishing IaC standards reducing deployment time by <strong class="text-white">75%</strong> across <strong class="text-white">20+ clusters</strong>.</li>
+                <li class="relative before:absolute before:-left-3 before:top-2 before:w-1.5 before:h-1.5 before:bg-brand-400 before:rounded-full">Designed DR/HA strategies across <strong class="text-white">2 regions</strong> achieving <strong class="text-white">99.95% uptime SLA</strong>, coordinating production deployments during bi-weekly maintenance windows.</li>
+                <li class="relative before:absolute before:-left-3 before:top-2 before:w-1.5 before:h-1.5 before:bg-brand-400 before:rounded-full">Implemented automated compliance checking and vulnerability remediation reducing security findings by <strong class="text-white">90%</strong>, standardizing deployments across <strong class="text-white">25+ microservices</strong> cutting failures by <strong class="text-white">60%</strong>.</li>
+                <li class="relative before:absolute before:-left-3 before:top-2 before:w-1.5 before:h-1.5 before:bg-brand-400 before:rounded-full">Created <strong class="text-white">30+ runbooks</strong> and <strong class="text-white">20+ operational procedures</strong> reducing MTTR by <strong class="text-white">40%</strong>; managed <strong class="text-white">15+ P1 incidents</strong> with zero SLA breaches.</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+
+        <!-- Virtasant DevOps Engineer -->
+        <div class="card-hover bg-slate-800/40 border border-slate-700/50 rounded-2xl overflow-hidden">
+          <details>
+            <summary class="flex items-start gap-4 p-6 cursor-pointer select-none">
+              <div class="w-10 h-10 rounded-xl bg-cyan-600/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+              </div>
+              <div class="flex-1 min-w-0">
+                <div class="flex flex-wrap items-start justify-between gap-2">
+                  <div>
+                    <h3 class="text-white font-semibold text-lg">DevOps Engineer</h3>
+                    <p class="text-cyan-400 font-medium">Virtasant</p>
+                  </div>
+                  <div class="text-right flex-shrink-0">
+                    <span class="text-sm text-slate-400">Oct 2022 – Oct 2023</span>
+                    <p class="text-xs text-slate-500">Austin, TX (Remote) · 1 yr 1 mo</p>
+                  </div>
+                </div>
+              </div>
+              <svg class="chevron w-5 h-5 text-slate-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </summary>
+            <div class="px-6 pb-6 pt-0">
+              <ul class="space-y-2 text-slate-300 text-sm pl-4">
+                <li class="relative before:absolute before:-left-3 before:top-2 before:w-1.5 before:h-1.5 before:bg-cyan-400 before:rounded-full">Managed and optimized <strong class="text-white">30+ Kubernetes clusters</strong>, performing upgrades across <strong class="text-white">11 versions (1.21→1.32)</strong> with automated processes reducing manual time by <strong class="text-white">80%</strong>.</li>
+                <li class="relative before:absolute before:-left-3 before:top-2 before:w-1.5 before:h-1.5 before:bg-cyan-400 before:rounded-full">Migrated container networking across <strong class="text-white">10+ EKS clusters</strong> improving performance by <strong class="text-white">30%</strong>; supported <strong class="text-white">500+ daily builds</strong>.</li>
+                <li class="relative before:absolute before:-left-3 before:top-2 before:w-1.5 before:h-1.5 before:bg-cyan-400 before:rounded-full">Configured Prometheus/AlertManager/Grafana tracking <strong class="text-white">200+ custom metrics</strong>, achieving <strong class="text-white">100% PSA compliance</strong>.</li>
+                <li class="relative before:absolute before:-left-3 before:top-2 before:w-1.5 before:h-1.5 before:bg-cyan-400 before:rounded-full">Configured GitOps workflows across <strong class="text-white">12 clusters</strong> enabling <strong class="text-white">20+ daily deployments</strong>; achieved <strong class="text-white">35% cost reduction</strong> through storage and autoscaling optimization.</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+
+        <!-- Netways -->
+        <div class="card-hover bg-slate-800/40 border border-slate-700/50 rounded-2xl overflow-hidden">
+          <details>
+            <summary class="flex items-start gap-4 p-6 cursor-pointer select-none">
+              <div class="w-10 h-10 rounded-xl bg-blue-600/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path></svg>
+              </div>
+              <div class="flex-1 min-w-0">
+                <div class="flex flex-wrap items-start justify-between gap-2">
+                  <div>
+                    <h3 class="text-white font-semibold text-lg">DevOps Lead</h3>
+                    <p class="text-blue-400 font-medium">Netways</p>
+                  </div>
+                  <div class="text-right flex-shrink-0">
+                    <span class="text-sm text-slate-400">Feb 2023 – Jun 2023</span>
+                    <p class="text-xs text-slate-500">Dubai, UAE · 5 mos</p>
+                  </div>
+                </div>
+              </div>
+              <svg class="chevron w-5 h-5 text-slate-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </summary>
+            <div class="px-6 pb-6 pt-0">
+              <ul class="space-y-2 text-slate-300 text-sm pl-4">
+                <li class="relative before:absolute before:-left-3 before:top-2 before:w-1.5 before:h-1.5 before:bg-blue-400 before:rounded-full">Led DevOps transformation delivering <strong class="text-white">5+ projects</strong> reducing operational costs by <strong class="text-white">40%</strong> and improving deployment frequency by <strong class="text-white">5×</strong>.</li>
+                <li class="relative before:absolute before:-left-3 before:top-2 before:w-1.5 before:h-1.5 before:bg-blue-400 before:rounded-full">Built <strong class="text-white">50+ Azure DevOps pipelines</strong> and managed <strong class="text-white">20+ repositories</strong>, cutting release cycles from weekly to daily.</li>
+                <li class="relative before:absolute before:-left-3 before:top-2 before:w-1.5 before:h-1.5 before:bg-blue-400 before:rounded-full">Implemented IaC with Terraform across <strong class="text-white">5+ Azure environments</strong> reducing provisioning time by <strong class="text-white">70%</strong>; standardized with <strong class="text-white">25+ Helm charts</strong> achieving <strong class="text-white">99.9% deployment success rate</strong>.</li>
+                <li class="relative before:absolute before:-left-3 before:top-2 before:w-1.5 before:h-1.5 before:bg-blue-400 before:rounded-full">Mentored <strong class="text-white">5+ engineers</strong> improving productivity by <strong class="text-white">35%</strong>; achieved <strong class="text-white">95% customer satisfaction</strong> across <strong class="text-white">10+ stakeholder groups</strong>.</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+
+        <!-- Syntheia -->
+        <div class="card-hover bg-slate-800/40 border border-slate-700/50 rounded-2xl overflow-hidden">
+          <details>
+            <summary class="flex items-start gap-4 p-6 cursor-pointer select-none">
+              <div class="w-10 h-10 rounded-xl bg-purple-600/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+              </div>
+              <div class="flex-1 min-w-0">
+                <div class="flex flex-wrap items-start justify-between gap-2">
+                  <div>
+                    <h3 class="text-white font-semibold text-lg">DevOps Consultant</h3>
+                    <p class="text-purple-400 font-medium">Syntheia</p>
+                  </div>
+                  <div class="text-right flex-shrink-0">
+                    <span class="text-sm text-slate-400">Oct 2022 – Feb 2023</span>
+                    <p class="text-xs text-slate-500">Sydney, Australia (Remote) · 5 mos</p>
+                  </div>
+                </div>
+              </div>
+              <svg class="chevron w-5 h-5 text-slate-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </summary>
+            <div class="px-6 pb-6 pt-0">
+              <ul class="space-y-2 text-slate-300 text-sm pl-4">
+                <li class="relative before:absolute before:-left-3 before:top-2 before:w-1.5 before:h-1.5 before:bg-purple-400 before:rounded-full">Developed DevOps strategies for <strong class="text-white">3+ enterprise clients</strong>, reducing deployment cycles by <strong class="text-white">60%</strong> and improving reliability to <strong class="text-white">99.95% uptime</strong>.</li>
+                <li class="relative before:absolute before:-left-3 before:top-2 before:w-1.5 before:h-1.5 before:bg-purple-400 before:rounded-full">Deployed <strong class="text-white">5+ production EKS/AKS clusters</strong> with GitOps (FluxCD) reducing manual intervention by <strong class="text-white">80%</strong>.</li>
+                <li class="relative before:absolute before:-left-3 before:top-2 before:w-1.5 before:h-1.5 before:bg-purple-400 before:rounded-full">Automated Kubernetes provisioning with Terraform — <strong class="text-white">12+ clusters</strong> deployed in under <strong class="text-white">30 minutes</strong>.</li>
+                <li class="relative before:absolute before:-left-3 before:top-2 before:w-1.5 before:h-1.5 before:bg-purple-400 before:rounded-full">Achieved <strong class="text-white">100% automated deployments</strong> with zero critical vulnerabilities in production.</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+
+        <!-- Rackspace L3 -->
+        <div class="card-hover bg-slate-800/40 border border-slate-700/50 rounded-2xl overflow-hidden">
+          <details>
+            <summary class="flex items-start gap-4 p-6 cursor-pointer select-none">
+              <div class="w-10 h-10 rounded-xl bg-red-600/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-5 h-5 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path></svg>
+              </div>
+              <div class="flex-1 min-w-0">
+                <div class="flex flex-wrap items-start justify-between gap-2">
+                  <div>
+                    <h3 class="text-white font-semibold text-lg">L3 DevOps Engineer → L2 Professional Services Engineer</h3>
+                    <p class="text-red-400 font-medium">Rackspace Technology</p>
+                  </div>
+                  <div class="text-right flex-shrink-0">
+                    <span class="text-sm text-slate-400">Dec 2021 – Oct 2022</span>
+                    <p class="text-xs text-slate-500">Cairo, Egypt · 11 mos</p>
+                  </div>
+                </div>
+              </div>
+              <svg class="chevron w-5 h-5 text-slate-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </summary>
+            <div class="px-6 pb-6 pt-0">
+              <ul class="space-y-2 text-slate-300 text-sm pl-4">
+                <li class="relative before:absolute before:-left-3 before:top-2 before:w-1.5 before:h-1.5 before:bg-red-400 before:rounded-full">Designed cloud architecture for <strong class="text-white">10+ microservices</strong> on AWS, reducing infrastructure costs by <strong class="text-white">45%</strong>.</li>
+                <li class="relative before:absolute before:-left-3 before:top-2 before:w-1.5 before:h-1.5 before:bg-red-400 before:rounded-full">Automated pipelines (Jenkins + GitHub Enterprise + Ansible), cutting release time from <strong class="text-white">4 hours to 30 minutes</strong> enabling <strong class="text-white">50+ deployments/week</strong>.</li>
+                <li class="relative before:absolute before:-left-3 before:top-2 before:w-1.5 before:h-1.5 before:bg-red-400 before:rounded-full">Migrated <strong class="text-white">12 monolithic applications</strong> to microservices on EKS improving scalability by <strong class="text-white">70%</strong>; achieved <strong class="text-white">SOC2 compliance</strong> across <strong class="text-white">15+ AWS accounts</strong>.</li>
+                <li class="relative before:absolute before:-left-3 before:top-2 before:w-1.5 before:h-1.5 before:bg-red-400 before:rounded-full">Designed and delivered <strong class="text-white">25+ AWS cloud solutions</strong> for enterprise clients; migrated <strong class="text-white">4 on-premises workloads</strong> reducing costs by <strong class="text-white">40%</strong>.</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+
+        <!-- Earlier roles toggle -->
+        <div class="card-hover bg-slate-800/40 border border-slate-700/50 rounded-2xl overflow-hidden">
+          <details>
+            <summary class="flex items-start gap-4 p-6 cursor-pointer select-none">
+              <div class="w-10 h-10 rounded-xl bg-slate-600/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              </div>
+              <div class="flex-1 min-w-0">
+                <h3 class="text-white font-semibold text-lg">Earlier Roles (2018–2021)</h3>
+                <p class="text-slate-400 text-sm">Dell Technologies · Vodafone Egypt · Echo Egypt</p>
+              </div>
+              <svg class="chevron w-5 h-5 text-slate-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </summary>
+            <div class="px-6 pb-6 pt-0 space-y-5">
+              <div class="border-l-2 border-slate-600 pl-4">
+                <h4 class="text-white font-medium">Technical Support Engineer — Dell Technologies</h4>
+                <p class="text-slate-500 text-xs mb-2">Feb 2021 – Nov 2021 · Cairo, Egypt</p>
+                <p class="text-slate-300 text-sm">Resolved <strong class="text-white">200+ monthly tickets</strong> for VBlock/VxBlock infrastructure with <strong class="text-white">95% first-call resolution</strong>. Managed VPLEX replication for <strong class="text-white">100+ TB data</strong> at <strong class="text-white">99.9% availability</strong>.</p>
+              </div>
+              <div class="border-l-2 border-slate-600 pl-4">
+                <h4 class="text-white font-medium">Technical Support Engineer — Vodafone Egypt</h4>
+                <p class="text-slate-500 text-xs mb-2">Aug 2020 – Feb 2021 · Cairo, Egypt</p>
+                <p class="text-slate-300 text-sm">Delivered 24/7 support for Telecom IN/Mediation infrastructure — <strong class="text-white">99.9% uptime</strong> across <strong class="text-white">50+ production nodes</strong>. Integrated SPLUNK monitoring reducing detection time by <strong class="text-white">60%</strong>.</p>
+              </div>
+              <div class="border-l-2 border-slate-600 pl-4">
+                <h4 class="text-white font-medium">Full Stack Developer — Echo Egypt</h4>
+                <p class="text-slate-500 text-xs mb-2">May 2018 – Jul 2020 · Cairo, Egypt</p>
+                <p class="text-slate-300 text-sm">Developed <strong class="text-white">5+ enterprise applications</strong> using C#, .NET, JavaScript — processing <strong class="text-white">100K+ daily transactions</strong> at <strong class="text-white">99% customer satisfaction</strong>.</p>
+              </div>
+            </div>
+          </details>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="py-20 bg-slate-900">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-bold text-white mb-2">Certifications</h2>
+      <div class="w-16 h-1 bg-brand-500 rounded mb-10"></div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+        <!-- AWS -->
+        <div class="card-hover bg-gradient-to-br from-orange-950/40 to-slate-800/40 border border-orange-500/20 rounded-2xl p-5">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-8 h-8 bg-orange-500/20 rounded-lg flex items-center justify-center">
+              <span class="text-orange-400 font-bold text-xs">AWS</span>
+            </div>
+            <h3 class="text-white font-semibold">Amazon Web Services</h3>
+            <span class="ml-auto badge bg-orange-500/10 text-orange-300 border border-orange-500/20">11×</span>
+          </div>
+          <ul class="space-y-1 text-slate-300 text-xs">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-orange-400 rounded-full flex-shrink-0"></span>Solutions Architect — Professional ⭐</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-orange-400 rounded-full flex-shrink-0"></span>DevOps Engineer — Professional ⭐</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-orange-400 rounded-full flex-shrink-0"></span>Solutions Architect — Associate</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-orange-400 rounded-full flex-shrink-0"></span>Developer — Associate</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-orange-400 rounded-full flex-shrink-0"></span>SysOps Administrator — Associate</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-orange-400 rounded-full flex-shrink-0"></span>Data Analytics Specialty 🎯</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-orange-400 rounded-full flex-shrink-0"></span>Database Specialty 🎯</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-orange-400 rounded-full flex-shrink-0"></span>Security Specialty 🎯</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-orange-400 rounded-full flex-shrink-0"></span>Machine Learning Specialty 🎯</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-orange-400 rounded-full flex-shrink-0"></span>Cloud Practitioner</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-orange-400 rounded-full flex-shrink-0"></span>AI Practitioner</li>
+          </ul>
+        </div>
+
+        <!-- Kubernetes -->
+        <div class="card-hover bg-gradient-to-br from-blue-950/40 to-slate-800/40 border border-blue-500/20 rounded-2xl p-5">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-8 h-8 bg-blue-500/20 rounded-lg flex items-center justify-center">
+              <span class="text-blue-400 font-bold text-xs">K8s</span>
+            </div>
+            <h3 class="text-white font-semibold">CNCF/Kubernetes</h3>
+            <span class="ml-auto badge bg-blue-500/10 text-blue-300 border border-blue-500/20">7× ⭐</span>
+          </div>
+          <p class="text-blue-300 text-xs font-medium mb-3">Kubestronaut Status</p>
+          <ul class="space-y-1 text-slate-300 text-xs">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-blue-400 rounded-full flex-shrink-0"></span>CKA — Certified Kubernetes Administrator</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-blue-400 rounded-full flex-shrink-0"></span>CKAD — Kubernetes App Developer</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-blue-400 rounded-full flex-shrink-0"></span>CKS — Kubernetes Security Specialist</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-blue-400 rounded-full flex-shrink-0"></span>KCSS — Cloud Native Security Associate</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-blue-400 rounded-full flex-shrink-0"></span>KCNA — Cloud Native Associate</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-blue-400 rounded-full flex-shrink-0"></span>Argo Project Associate</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-blue-400 rounded-full flex-shrink-0"></span>Prometheus Associate</li>
+          </ul>
+        </div>
+
+        <!-- Azure -->
+        <div class="card-hover bg-gradient-to-br from-sky-950/40 to-slate-800/40 border border-sky-500/20 rounded-2xl p-5">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-8 h-8 bg-sky-500/20 rounded-lg flex items-center justify-center">
+              <span class="text-sky-400 font-bold text-xs">AZ</span>
+            </div>
+            <h3 class="text-white font-semibold">Microsoft Azure</h3>
+            <span class="ml-auto badge bg-sky-500/10 text-sky-300 border border-sky-500/20">6×</span>
+          </div>
+          <ul class="space-y-1 text-slate-300 text-xs">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-sky-400 rounded-full flex-shrink-0"></span>Azure Administrator Associate</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-sky-400 rounded-full flex-shrink-0"></span>Azure AI Fundamentals</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-sky-400 rounded-full flex-shrink-0"></span>Azure Data Fundamentals</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-sky-400 rounded-full flex-shrink-0"></span>Azure Fundamentals</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-sky-400 rounded-full flex-shrink-0"></span>Security, Compliance & Identity Fund.</li>
+          </ul>
+        </div>
+
+        <!-- VMware -->
+        <div class="card-hover bg-gradient-to-br from-gray-800/40 to-slate-800/40 border border-gray-500/20 rounded-2xl p-5">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-8 h-8 bg-gray-500/20 rounded-lg flex items-center justify-center">
+              <span class="text-gray-400 font-bold text-xs">VM</span>
+            </div>
+            <h3 class="text-white font-semibold">VMware</h3>
+            <span class="ml-auto badge bg-gray-500/10 text-gray-300 border border-gray-500/20">4×</span>
+          </div>
+          <ul class="space-y-1 text-slate-300 text-xs">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gray-400 rounded-full flex-shrink-0"></span>VCP-DCV 2020 & 2021</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gray-400 rounded-full flex-shrink-0"></span>VCP-NV NSX-V (2020)</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gray-400 rounded-full flex-shrink-0"></span>VCP-NV NSX-T (2021)</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gray-400 rounded-full flex-shrink-0"></span>Digital Business Transformation</li>
+          </ul>
+        </div>
+
+        <!-- HashiCorp -->
+        <div class="card-hover bg-gradient-to-br from-purple-950/40 to-slate-800/40 border border-purple-500/20 rounded-2xl p-5">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-8 h-8 bg-purple-500/20 rounded-lg flex items-center justify-center">
+              <span class="text-purple-400 font-bold text-xs">HC</span>
+            </div>
+            <h3 class="text-white font-semibold">HashiCorp</h3>
+            <span class="ml-auto badge bg-purple-500/10 text-purple-300 border border-purple-500/20">3×</span>
+          </div>
+          <ul class="space-y-1 text-slate-300 text-xs">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-purple-400 rounded-full flex-shrink-0"></span>Terraform Associate</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-purple-400 rounded-full flex-shrink-0"></span>Vault Associate</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-purple-400 rounded-full flex-shrink-0"></span>Consul Associate</li>
+          </ul>
+        </div>
+
+        <!-- Others -->
+        <div class="card-hover bg-gradient-to-br from-slate-800/40 to-slate-700/40 border border-slate-600/30 rounded-2xl p-5">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-8 h-8 bg-slate-500/20 rounded-lg flex items-center justify-center">
+              <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+            </div>
+            <h3 class="text-white font-semibold">Additional</h3>
+          </div>
+          <ul class="space-y-1 text-slate-300 text-xs">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-slate-400 rounded-full flex-shrink-0"></span>Cisco CCNA</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-slate-400 rounded-full flex-shrink-0"></span>Dell ISM v4.0</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-slate-400 rounded-full flex-shrink-0"></span>IBM: 10+ Data Science badges</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-slate-400 rounded-full flex-shrink-0"></span>Kaggle: 10+ ML certificates</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-slate-400 rounded-full flex-shrink-0"></span>AWS Partner: 5+ accreditations</li>
+          </ul>
+          <a href="https://www.credly.com/users/ayman-hatem-zahran/badges" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-1 text-xs text-brand-400 hover:text-brand-300">
+            View all on Credly →
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-slate-950">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-bold text-white mb-2">Skills</h2>
+      <div class="w-16 h-1 bg-brand-500 rounded mb-10"></div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div class="space-y-2">
+          <h3 class="text-brand-400 font-semibold text-sm uppercase tracking-wider mb-3">Cloud Platforms</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge bg-orange-500/10 text-orange-300 border border-orange-500/20">AWS</span>
+            <span class="badge bg-sky-500/10 text-sky-300 border border-sky-500/20">Azure</span>
+            <span class="badge bg-red-500/10 text-red-300 border border-red-500/20">GCP</span>
+            <span class="badge bg-gray-500/10 text-gray-300 border border-gray-500/20">VMware</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h3 class="text-brand-400 font-semibold text-sm uppercase tracking-wider mb-3">Container & Orchestration</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge bg-blue-500/10 text-blue-300 border border-blue-500/20">Kubernetes</span>
+            <span class="badge bg-blue-500/10 text-blue-300 border border-blue-500/20">Docker</span>
+            <span class="badge bg-blue-500/10 text-blue-300 border border-blue-500/20">Helm</span>
+            <span class="badge bg-blue-500/10 text-blue-300 border border-blue-500/20">EKS</span>
+            <span class="badge bg-blue-500/10 text-blue-300 border border-blue-500/20">AKS</span>
+            <span class="badge bg-blue-500/10 text-blue-300 border border-blue-500/20">GKE</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h3 class="text-brand-400 font-semibold text-sm uppercase tracking-wider mb-3">Infrastructure as Code</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge bg-purple-500/10 text-purple-300 border border-purple-500/20">Terraform</span>
+            <span class="badge bg-purple-500/10 text-purple-300 border border-purple-500/20">Pulumi</span>
+            <span class="badge bg-purple-500/10 text-purple-300 border border-purple-500/20">Terragrunt</span>
+            <span class="badge bg-purple-500/10 text-purple-300 border border-purple-500/20">Ansible</span>
+            <span class="badge bg-purple-500/10 text-purple-300 border border-purple-500/20">CDK</span>
+            <span class="badge bg-purple-500/10 text-purple-300 border border-purple-500/20">CloudFormation</span>
+            <span class="badge bg-purple-500/10 text-purple-300 border border-purple-500/20">Projen</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h3 class="text-brand-400 font-semibold text-sm uppercase tracking-wider mb-3">GitOps & CI/CD</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge bg-orange-500/10 text-orange-300 border border-orange-500/20">ArgoCD</span>
+            <span class="badge bg-orange-500/10 text-orange-300 border border-orange-500/20">FluxCD</span>
+            <span class="badge bg-orange-500/10 text-orange-300 border border-orange-500/20">GitHub Actions</span>
+            <span class="badge bg-orange-500/10 text-orange-300 border border-orange-500/20">Jenkins</span>
+            <span class="badge bg-orange-500/10 text-orange-300 border border-orange-500/20">Azure DevOps</span>
+            <span class="badge bg-orange-500/10 text-orange-300 border border-orange-500/20">Tekton</span>
+            <span class="badge bg-orange-500/10 text-orange-300 border border-orange-500/20">Spinnaker</span>
+            <span class="badge bg-orange-500/10 text-orange-300 border border-orange-500/20">JFrog</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h3 class="text-brand-400 font-semibold text-sm uppercase tracking-wider mb-3">Observability</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge bg-yellow-500/10 text-yellow-300 border border-yellow-500/20">Prometheus</span>
+            <span class="badge bg-yellow-500/10 text-yellow-300 border border-yellow-500/20">Grafana</span>
+            <span class="badge bg-yellow-500/10 text-yellow-300 border border-yellow-500/20">AlertManager</span>
+            <span class="badge bg-yellow-500/10 text-yellow-300 border border-yellow-500/20">OpenTelemetry</span>
+            <span class="badge bg-yellow-500/10 text-yellow-300 border border-yellow-500/20">CloudWatch</span>
+            <span class="badge bg-yellow-500/10 text-yellow-300 border border-yellow-500/20">ELK</span>
+            <span class="badge bg-yellow-500/10 text-yellow-300 border border-yellow-500/20">SPLUNK</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h3 class="text-brand-400 font-semibold text-sm uppercase tracking-wider mb-3">Languages</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge bg-green-500/10 text-green-300 border border-green-500/20">Python</span>
+            <span class="badge bg-green-500/10 text-green-300 border border-green-500/20">TypeScript</span>
+            <span class="badge bg-green-500/10 text-green-300 border border-green-500/20">Go</span>
+            <span class="badge bg-green-500/10 text-green-300 border border-green-500/20">Bash</span>
+            <span class="badge bg-green-500/10 text-green-300 border border-green-500/20">YAML</span>
+            <span class="badge bg-green-500/10 text-green-300 border border-green-500/20">HCL</span>
+            <span class="badge bg-green-500/10 text-green-300 border border-green-500/20">C#</span>
+            <span class="badge bg-green-500/10 text-green-300 border border-green-500/20">Groovy</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="py-20 bg-slate-900">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-bold text-white mb-2">Education</h2>
+      <div class="w-16 h-1 bg-brand-500 rounded mb-10"></div>
+
+      <div class="relative">
+        <div class="absolute left-5 top-0 bottom-0 w-0.5 bg-gradient-to-b from-brand-500 via-purple-500 to-slate-700 hidden sm:block"></div>
+        <div class="space-y-6">
+
+          <div class="sm:pl-14 relative">
+            <div class="absolute left-3.5 top-3 w-3 h-3 bg-brand-500 rounded-full border-2 border-slate-900 hidden sm:block"></div>
+            <div class="card-hover bg-slate-800/40 border border-slate-700/50 rounded-2xl p-5">
+              <div class="flex flex-wrap items-start justify-between gap-2 mb-2">
+                <div>
+                  <h3 class="text-white font-semibold">Doctorate of Business Administration (DBA)</h3>
+                  <p class="text-brand-400 text-sm">Minor: AI & Autonomous Freelance Platforms</p>
+                  <p class="text-slate-400 text-xs">Swiss School of Business and Management — Geneva, Switzerland</p>
+                </div>
+                <span class="badge bg-brand-500/10 text-brand-300 border border-brand-500/20">2025–2027</span>
+              </div>
+              <p class="text-slate-300 text-sm">Developing DBA framework "From Human Freelancers to Autonomous AI Agents" — assessing ROI and transformation in AI-augmented freelance platforms. Reviewing 100+ sources on human-AI collaboration frameworks.</p>
+            </div>
+          </div>
+
+          <div class="sm:pl-14 relative">
+            <div class="absolute left-3.5 top-3 w-3 h-3 bg-purple-500 rounded-full border-2 border-slate-900 hidden sm:block"></div>
+            <div class="card-hover bg-slate-800/40 border border-slate-700/50 rounded-2xl p-5">
+              <div class="flex flex-wrap items-start justify-between gap-2 mb-2">
+                <div>
+                  <h3 class="text-white font-semibold">Master of Business Administration (MBA)</h3>
+                  <p class="text-purple-400 text-sm">Digital Transformation — Cloud & DevOps</p>
+                  <p class="text-slate-400 text-xs">Zigurat Innovation & Technology Business School / Universitat de Barcelona — Spain</p>
+                </div>
+                <span class="badge bg-purple-500/10 text-purple-300 border border-purple-500/20">2023–2024</span>
+              </div>
+              <p class="text-slate-300 text-sm">Led capstone designing digital transformation strategy using polyglot programming and "everything as code" framework. Conducted market analysis (PESTEL, Porter's Five Forces) with 120+ respondents. Achieved 72% faster time-to-market.</p>
+            </div>
+          </div>
+
+          <div class="sm:pl-14 relative">
+            <div class="absolute left-3.5 top-3 w-3 h-3 bg-orange-500 rounded-full border-2 border-slate-900 hidden sm:block"></div>
+            <div class="card-hover bg-slate-800/40 border border-slate-700/50 rounded-2xl p-5">
+              <div class="flex flex-wrap items-start justify-between gap-2">
+                <div>
+                  <h3 class="text-white font-semibold">Scholarship — AWS Practical Data Scientist Academy</h3>
+                  <p class="text-orange-400 text-xs">Ministry of Communications & IT (MCIT) — Cairo, Egypt</p>
+                </div>
+                <span class="badge bg-orange-500/10 text-orange-300 border border-orange-500/20">2021–2022</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sm:pl-14 relative">
+            <div class="absolute left-3.5 top-3 w-3 h-3 bg-slate-500 rounded-full border-2 border-slate-900 hidden sm:block"></div>
+            <div class="card-hover bg-slate-800/40 border border-slate-700/50 rounded-2xl p-5">
+              <div class="flex flex-wrap items-start justify-between gap-2">
+                <div>
+                  <h3 class="text-white font-semibold">Bachelor — Communication & Computer Engineering</h3>
+                  <p class="text-slate-400 text-xs">Cairo University — Faculty of Engineering, Egypt</p>
+                </div>
+                <span class="badge bg-slate-500/10 text-slate-300 border border-slate-500/20">2012–2018</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Community Section -->
+  <section id="community" class="py-20 bg-slate-950">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-bold text-white mb-2">Community & Involvement</h2>
+      <div class="w-16 h-1 bg-brand-500 rounded mb-10"></div>
+
+      <div class="grid sm:grid-cols-3 gap-4 mb-10">
+        <div class="card-hover bg-slate-800/40 border border-orange-500/20 rounded-2xl p-5 text-center">
+          <div class="text-3xl mb-3">🎓</div>
+          <h3 class="text-white font-semibold mb-1">AWS Authorized Instructor</h3>
+          <p class="text-slate-400 text-xs mb-2">AWS AAI · Jun 2023 – Present</p>
+          <p class="text-slate-300 text-sm">Delivering 5+ official AWS training courses on cloud architecture, DevOps, and serverless computing.</p>
+        </div>
+        <div class="card-hover bg-slate-800/40 border border-brand-500/20 rounded-2xl p-5 text-center">
+          <div class="text-3xl mb-3">✍️</div>
+          <h3 class="text-white font-semibold mb-1">AWS Certification SME</h3>
+          <p class="text-slate-400 text-xs mb-2">Exam Writer · Apr 2022 – Present</p>
+          <p class="text-slate-300 text-sm">Reviewed 10+ exam questions for Solutions Architect and DevOps Engineer paths. Contributed to 5 development workshops.</p>
+        </div>
+        <div class="card-hover bg-slate-800/40 border border-green-500/20 rounded-2xl p-5 text-center">
+          <div class="text-3xl mb-3">🌍</div>
+          <h3 class="text-white font-semibold mb-1">AWS Community Builder</h3>
+          <p class="text-slate-400 text-xs mb-2">Cloud/DevOps Track · Mar 2022 – Present</p>
+          <p class="text-slate-300 text-sm">Selected among 500+ global applicants. Engaged 1,000+ community members. Published 5+ technical articles.</p>
+        </div>
+      </div>
+
+      <h3 class="text-white font-semibold text-lg mb-4">Blog & Publications</h3>
+      <div class="space-y-3">
+        <a href="https://dev.to/aws-builders/building-cdk-construct-library-cdk-app-and-cdk-pipelines-using-projen-41d" target="_blank" rel="noopener" class="flex items-start gap-3 bg-slate-800/40 border border-slate-700/50 rounded-xl p-4 hover:border-brand-500/50 transition-colors group">
+          <span class="text-xl">📝</span>
+          <div>
+            <h4 class="text-white group-hover:text-brand-400 transition-colors font-medium text-sm">Building CDK Construct Library, CDK App and CDK Pipelines using Projen</h4>
+            <p class="text-slate-500 text-xs mt-0.5">Dev.to / AWS Builders →</p>
+          </div>
+        </a>
+        <a href="https://dev.to/aymanzahran/build-you-kubernetes-playground-in-less-than-5-minute-for-free-58il" target="_blank" rel="noopener" class="flex items-start gap-3 bg-slate-800/40 border border-slate-700/50 rounded-xl p-4 hover:border-brand-500/50 transition-colors group">
+          <span class="text-xl">☸️</span>
+          <div>
+            <h4 class="text-white group-hover:text-brand-400 transition-colors font-medium text-sm">Build Your Kubernetes Playground in less than 5 minutes for FREE!!</h4>
+            <p class="text-slate-500 text-xs mt-0.5">Dev.to →</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Downloads Section -->
+  <section class="py-16 bg-gradient-to-r from-brand-900/30 via-slate-800/40 to-purple-900/30 border-y border-slate-700/30">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl font-bold text-white mb-2">Download My Documents</h2>
+      <p class="text-slate-400 mb-8">Get the latest versions of my resume and LinkedIn-optimized profile PDF.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="resume.pdf" download class="flex items-center gap-3 bg-brand-600 hover:bg-brand-500 text-white font-semibold px-6 py-3 rounded-xl transition-all hover:scale-105 shadow-lg shadow-brand-600/20">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+          Resume PDF
+          <span class="text-xs bg-white/20 rounded px-1.5 py-0.5">Latest</span>
+        </a>
+        <a href="linkedin-copy.pdf" download class="flex items-center gap-3 bg-[#0A66C2]/80 hover:bg-[#0A66C2] text-white font-semibold px-6 py-3 rounded-xl transition-all hover:scale-105 shadow-lg">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn PDF
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-slate-900">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-bold text-white mb-2">Get in Touch</h2>
+      <div class="w-16 h-1 bg-brand-500 rounded mb-10"></div>
+
+      <div class="grid sm:grid-cols-2 gap-8">
+        <div class="space-y-4">
+          <p class="text-slate-300">I'm open to discussing cloud architecture, DevOps transformations, consulting engagements, or just connecting with like-minded engineers.</p>
+          <div class="space-y-3">
+            <a href="mailto:ah.zahran@outlook.com" class="flex items-center gap-3 text-slate-300 hover:text-brand-400 transition-colors">
+              <svg class="w-5 h-5 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+              ah.zahran@outlook.com
+            </a>
+            <a href="https://www.linkedin.com/in/ay-zahran/" target="_blank" rel="noopener" class="flex items-center gap-3 text-slate-300 hover:text-brand-400 transition-colors">
+              <svg class="w-5 h-5 text-brand-400" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              linkedin.com/in/ay-zahran
+            </a>
+            <a href="https://calendly.com/ayman-zahran/catch-up" target="_blank" rel="noopener" class="flex items-center gap-3 text-slate-300 hover:text-brand-400 transition-colors">
+              <svg class="w-5 h-5 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+              Schedule a Call
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact form via Formspree -->
+        <form action="https://formspree.io/f/xjkbnzdq" method="POST" class="space-y-4">
+          <div>
+            <input type="text" name="name" placeholder="Your Name" required class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-brand-500 transition-colors" />
+          </div>
+          <div>
+            <input type="email" name="email" placeholder="Your Email" required class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-brand-500 transition-colors" />
+          </div>
+          <div>
+            <textarea name="message" rows="4" placeholder="Your Message" required class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-brand-500 transition-colors resize-none"></textarea>
+          </div>
+          <button type="submit" class="w-full bg-brand-600 hover:bg-brand-500 text-white font-semibold py-2.5 rounded-xl transition-colors">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 border-t border-slate-800/50 py-8">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-slate-500 text-sm">© 2026 Ayman Zahran · <span class="font-mono text-brand-500">git commit -m "Everything as a Code"</span></p>
+        <div class="flex items-center gap-4">
+          <a href="https://github.com/AymanZahran" target="_blank" rel="noopener" class="text-slate-600 hover:text-white transition-colors text-xs">GitHub</a>
+          <a href="https://www.linkedin.com/in/ay-zahran/" target="_blank" rel="noopener" class="text-slate-600 hover:text-brand-400 transition-colors text-xs">LinkedIn</a>
+          <a href="https://dev.to/aymanzahran" target="_blank" rel="noopener" class="text-slate-600 hover:text-white transition-colors text-xs">Blog</a>
+          <a href="resume.pdf" download class="text-slate-600 hover:text-green-400 transition-colors text-xs">Resume</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn?.addEventListener('click', () => mobileMenu?.classList.toggle('hidden'));
+
+    // Close mobile menu on nav link click
+    document.querySelectorAll('#mobileMenu a').forEach(link => {
+      link.addEventListener('click', () => mobileMenu?.classList.add('hidden'));
+    });
+
+    // Smooth reveal on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('section').forEach(section => {
+      section.style.opacity = '0';
+      section.style.transform = 'translateY(10px)';
+      section.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+      observer.observe(section);
+    });
+
+    // Hero section always visible
+    const hero = document.getElementById('home');
+    if (hero) { hero.style.opacity = '1'; hero.style.transform = 'translateY(0)'; }
+  </script>
+</body>
+</html>
