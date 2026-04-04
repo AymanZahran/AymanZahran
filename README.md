@@ -432,8 +432,9 @@ I'm an experienced Cloud/DevOps/Platform/SRE engineer and Tech Lead with a passi
 ## ⚡ Recent Activity
 
 <!-- ACTIVITY-LIST:START -->
-- [AymanZahran pushed to main in AymanZahran/LFS256-code](https://github.com/AymanZahran/LFS256-code/compare/a34ad56115...e2218bef84)
-- [AymanZahran forked AymanZahran/LFS256-code from lftraining/LFS256-code](https://github.com/AymanZahran/LFS256-code)
+- [AymanZahran closed a pull request in AWSAutomationWithCDK](https://github.com/AymanZahran/AWSAutomationWithCDK/pull/1)
+- [AymanZahran opened a pull request in AWSAutomationWithCDK](https://github.com/AymanZahran/AWSAutomationWithCDK/pull/1)
+- [AymanZahran created a branch](https://github.com/AymanZahran/AWSAutomationWithCDK/compare/0000000000...43b2d68f47)
 <!-- ACTIVITY-LIST:END -->
 
 ---
