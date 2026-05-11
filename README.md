@@ -432,8 +432,11 @@ I'm an experienced Cloud/DevOps/Platform/SRE engineer and Tech Lead with a passi
 ## ⚡ Recent Activity
 
 <!-- ACTIVITY-LIST:START -->
-- [AymanZahran closed a pull request in AWSAutomationWithCDK](https://github.com/AymanZahran/AWSAutomationWithCDK/pull/1)
-- [AymanZahran opened a pull request in AWSAutomationWithCDK](https://github.com/AymanZahran/AWSAutomationWithCDK/pull/1)
+- [AymanZahran pushed task3-kubernetes-gitops](https://github.com/AymanZahran/task3-kubernetes-gitops/compare/3469fc33e4...51d5ad9a6f)
+- [AymanZahran pushed task2-kubernetes-e2e-tests](https://github.com/AymanZahran/task2-kubernetes-e2e-tests/compare/13252e5926...a443e03f01)
+- [AymanZahran pushed task1-car-fleet-management](https://github.com/AymanZahran/task1-car-fleet-management/compare/614df406e7...bdb5033e75)
+- [AymanZahran created a branch](https://github.com/AymanZahran/task3-kubernetes-gitops/compare/0000000000...3469fc33e4)
+- [AymanZahran created a branch](https://github.com/AymanZahran/task2-kubernetes-e2e-tests/compare/0000000000...13252e5926)
 <!-- ACTIVITY-LIST:END -->
 
 ---
