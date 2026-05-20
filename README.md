@@ -42,6 +42,7 @@
   <img src="https://img.shields.io/badge/11x_AWS_Certified-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS"/>
   <img src="https://img.shields.io/badge/6x_Azure_Certified-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="Azure"/>
   <img src="https://img.shields.io/badge/Kubestronaut_(7x_CNCF)-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes"/>
+  <img src="https://img.shields.io/badge/2x_Google_Cloud_Certified-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" alt="GCP"/>
   <img src="https://img.shields.io/badge/4x_VMware_Certified-607078?style=for-the-badge&logo=vmware&logoColor=white" alt="VMware"/>
   <img src="https://img.shields.io/badge/3x_HashiCorp_Certified-7B42BC?style=for-the-badge&logo=terraform&logoColor=white" alt="HashiCorp"/>
   <img src="https://img.shields.io/badge/CCNA-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white" alt="Cisco"/>
@@ -307,6 +308,17 @@ I'm an experienced Cloud/DevOps/Platform/SRE engineer and Tech Lead with a passi
 | KCNA — Kubernetes and Cloud Native Associate | CNCF |
 | Argo Project Associate | CNCF |
 | Prometheus Associate | CNCF |
+
+</details>
+
+<details>
+<summary><strong>🟦 Google Cloud — 2 Certifications</strong></summary>
+<br>
+
+| Certification | Level |
+|---------------|-------|
+| Google Cloud Digital Leader | Foundational |
+| Google Generative AI Leader | Foundational |
 
 </details>
 
