@@ -1,5 +1,5 @@
 Ayman Hatem Zahran  
-Cairo, Egypt • ah.zahran@outlook.com • +201226299355 • linkedin.com/in/ay-zahran • www.aymanzahran.com  
+Cairo, Egypt • ah.zahran@outlook.com • linkedin.com/in/ay-zahran • www.aymanzahran.com  
 
 ---
 
