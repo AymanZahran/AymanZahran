@@ -1,0 +1,46 @@
+name: Build CV PDF
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'cv.html'
+      - 'resume.md'
+      - 'tools/build-cv-pdf.sh'
+      - '.github/workflows/build-cv.yml'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-cv
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install chromium
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq chromium-browser fonts-liberation fonts-noto
+
+      - name: Render cv.html → Ayman-Zahran-CV.pdf
+        run: bash tools/build-cv-pdf.sh
+
+      - name: Commit regenerated PDF
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add Ayman-Zahran-CV.pdf
+          if ! git diff --staged --quiet; then
+            git commit -m "chore(cv): auto-regenerate PDF from cv.html [skip ci]"
+            git push
+          else
+            echo "No PDF changes to commit."
+          fi
