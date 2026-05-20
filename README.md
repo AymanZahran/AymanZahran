@@ -26,7 +26,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/AymanZahran/AymanZahran/raw/main/resume.pdf" target="_blank">
+  <a href="https://github.com/AymanZahran/AymanZahran/raw/main/Ayman-Zahran-CV.pdf" target="_blank">
     <img src="https://img.shields.io/badge/📄_Download_Resume-4CAF50?style=for-the-badge&logoColor=white" alt="Resume"/>
   </a>
   <a href="https://github.com/AymanZahran/AymanZahran/raw/main/linkedin-copy.pdf" target="_blank">
