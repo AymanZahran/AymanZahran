@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ayman Zahran — CV</title>
+<style>
+  /* ─── Page setup ────────────────────────────────────────────────── */
+  @page { size: A4; margin: 14mm 14mm 14mm 14mm; }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    color: #1a1a2e;
+    font-family: "Inter", -apple-system, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 9.5pt;
+    line-height: 1.42;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  /* Accent token */
+  :root { --accent: #0d4d7a; --accent-soft: #e8f1f7; --muted: #5a6480; --line: #d8dee9; }
+
+  /* ─── Header (name + contacts) ──────────────────────────────────── */
+  header { padding-bottom: 6pt; border-bottom: 2pt solid var(--accent); margin-bottom: 10pt; }
+  h1 { font-size: 24pt; font-weight: 700; margin: 0 0 1pt; color: var(--accent); letter-spacing: -0.2pt; }
+  .tagline { font-size: 11pt; font-weight: 600; color: #243959; margin: 1pt 0 5pt; }
+  .contact { font-size: 8.6pt; color: var(--muted); display: flex; flex-wrap: wrap; gap: 4pt 12pt; }
+  .contact a { color: var(--accent); text-decoration: none; }
+  .contact span.sep { color: #b8c1d1; }
+
+  /* ─── Section heading ───────────────────────────────────────────── */
+  h2 {
+    font-size: 11pt;
+    font-weight: 700;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.6pt;
+    margin: 12pt 0 5pt;
+    padding-bottom: 2pt;
+    border-bottom: 1pt solid var(--line);
+  }
+
+  /* ─── Body text ─────────────────────────────────────────────────── */
+  p { margin: 0 0 4pt; }
+  ul { margin: 2pt 0 0; padding-left: 14pt; }
+  li { margin: 0 0 2pt; }
+  strong { color: #1a1a2e; }
+
+  /* ─── Experience entry ──────────────────────────────────────────── */
+  .role { margin-bottom: 7pt; page-break-inside: avoid; }
+  .role-head { display: flex; justify-content: space-between; align-items: baseline; gap: 6pt; }
+  .role-title { font-size: 10.4pt; font-weight: 700; color: #1a1a2e; }
+  .role-period { font-size: 8.6pt; color: var(--muted); white-space: nowrap; }
+  .role-sub { display: flex; justify-content: space-between; align-items: baseline; font-size: 9pt; color: var(--muted); margin-bottom: 2pt; }
+  .role-company { font-weight: 600; color: var(--accent); }
+  .role-location { font-style: italic; }
+
+  /* ─── Two-column layout for skills / certs ──────────────────────── */
+  .twocol { display: grid; grid-template-columns: 1fr 1fr; gap: 0 14pt; }
+  .skill-line { margin-bottom: 3pt; font-size: 9pt; }
+  .skill-line strong { color: var(--accent); display: inline-block; min-width: 0; margin-right: 4pt; }
+
+  /* ─── Cert groups ──────────────────────────────────────────────── */
+  .cert-group { margin-bottom: 4pt; page-break-inside: avoid; }
+  .cert-label {
+    display: inline-block;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 8.5pt;
+    padding: 1pt 7pt;
+    border-radius: 8pt;
+    margin-bottom: 2pt;
+  }
+  .cert-list { font-size: 8.8pt; color: #2a3550; }
+
+  /* ─── Education entry ──────────────────────────────────────────── */
+  .edu { margin-bottom: 4pt; page-break-inside: avoid; }
+  .edu-head { display: flex; justify-content: space-between; align-items: baseline; gap: 6pt; font-size: 9.2pt; }
+  .edu-degree { font-weight: 700; color: #1a1a2e; }
+  .edu-period { font-size: 8.6pt; color: var(--muted); white-space: nowrap; }
+  .edu-school { color: var(--accent); font-weight: 600; font-size: 9pt; }
+  .edu-detail { font-size: 8.8pt; color: var(--muted); }
+
+  /* ─── Footer ───────────────────────────────────────────────────── */
+  footer { margin-top: 10pt; padding-top: 4pt; border-top: 1pt solid var(--line); font-size: 8pt; color: var(--muted); text-align: center; }
+  footer code { font-family: "SF Mono", "JetBrains Mono", "Menlo", monospace; color: var(--accent); }
+
+  /* ─── Print niceties ───────────────────────────────────────────── */
+  h2, h3 { page-break-after: avoid; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Ayman Hatem Zahran</h1>
+  <div class="tagline">Tech Lead · Cloud / DevOps / Platform / SRE · Kubestronaut · AWS Community Builder</div>
+  <div class="contact">
+    <span>Cairo, Egypt</span>
+    <span class="sep">·</span>
+    <a href="mailto:ah.zahran@outlook.com">ah.zahran@outlook.com</a>
+    <span class="sep">·</span>
+    <span>+20 122 629 9355</span>
+    <span class="sep">·</span>
+    <a href="https://linkedin.com/in/ay-zahran">linkedin.com/in/ay-zahran</a>
+    <span class="sep">·</span>
+    <a href="https://github.com/AymanZahran">github.com/AymanZahran</a>
+    <span class="sep">·</span>
+    <a href="https://aymanzahran.com">aymanzahran.com</a>
+    <span class="sep">·</span>
+    <a href="https://dev.to/aymanzahran">dev.to/aymanzahran</a>
+  </div>
+</header>
+
+<!-- ────────────────────────── SUMMARY ─────────────────────────── -->
+<h2>Summary</h2>
+<p>
+  Experienced Cloud / DevOps / Platform / SRE engineer and Tech Lead with comprehensive cloud-and-container expertise across AWS, Azure, GCP, VMware, and CNCF. Proven record leading Kubernetes orchestration at scale, CI/CD automation, multi-cloud migration, and disaster-recovery design achieving 99.95% uptime SLAs. Build resilient, self-healing infrastructure under the <em>"Everything as Code"</em> philosophy — automate everything, eliminate waste, free engineering bandwidth for innovation. Passionate about AI augmenting human intelligence to ship faster and at higher quality.
+</p>
+
+<!-- ────────────────────────── EXPERIENCE ─────────────────────── -->
+<h2>Experience</h2>
+
+<div class="role">
+  <div class="role-head"><span class="role-title">Tech Lead</span><span class="role-period">Oct 2023 – Present</span></div>
+  <div class="role-sub"><span class="role-company">Virtasant</span><span class="role-location">Austin, TX (Remote)</span></div>
+  <ul>
+    <li>Architected multi-account migration from public cloud to private cloud, improving resource allocation and IP-space utilisation across all production tiers.</li>
+    <li>Led a team of 4–5 SREs managing critical CI/CD infrastructure with <strong>1,000+ daily pipeline executions</strong>; established IaC standards reducing deployment time by <strong>75%</strong> across <strong>20+ Kubernetes clusters</strong>.</li>
+    <li>Designed DR/HA strategies across <strong>2 regions</strong> achieving <strong>99.95% uptime SLA</strong>; ran bi-weekly maintenance windows with zero customer-visible downtime.</li>
+    <li>Automated compliance checking + vulnerability remediation cutting security findings by <strong>90%</strong>; standardized deployments across <strong>25+ microservices</strong> reducing failure rates by <strong>60%</strong>.</li>
+    <li>Authored <strong>30+ runbooks</strong> and <strong>20+ operational procedures</strong> dropping MTTR by <strong>40%</strong>; managed <strong>15+ P1 incidents</strong> with zero SLA breaches.</li>
+  </ul>
+</div>
+
+<div class="role">
+  <div class="role-head"><span class="role-title">DevOps Engineer</span><span class="role-period">Oct 2022 – Oct 2023</span></div>
+  <div class="role-sub"><span class="role-company">Virtasant</span><span class="role-location">Austin, TX (Remote)</span></div>
+  <ul>
+    <li>Managed and optimised <strong>30+ Kubernetes clusters</strong>; performed quarterly upgrades across <strong>11 versions (1.21 → 1.32)</strong>; automated updates for <strong>100+ infrastructure components</strong> cutting manual effort by <strong>80%</strong>.</li>
+    <li>Migrated container networking across <strong>10+ EKS clusters</strong> improving performance by <strong>30%</strong>; upgraded CI/CD engines across <strong>10+ environments</strong> supporting <strong>500+ daily builds</strong>.</li>
+    <li>Built monitoring stack with Prometheus / AlertManager / Grafana tracking <strong>200+ custom metrics</strong>; achieved <strong>100% PSA compliance</strong>.</li>
+    <li>Managed bi-monthly secret rotation for <strong>50+ service accounts</strong> using Vault; rolled out GitOps across <strong>12 clusters</strong> enabling <strong>20+ daily deployments</strong>.</li>
+    <li>Drove cost-optimisation programme achieving <strong>35% reduction</strong> through storage tiering, autoscaling, and right-sizing.</li>
+  </ul>
+</div>
+
+<div class="role">
+  <div class="role-head"><span class="role-title">DevOps Lead</span><span class="role-period">Feb 2023 – Jun 2023</span></div>
+  <div class="role-sub"><span class="role-company">Netways</span><span class="role-location">Dubai, UAE</span></div>
+  <ul>
+    <li>Led DevOps transformation for Azure Cloud infrastructure across <strong>5+ projects</strong>: cut operational costs by <strong>40%</strong>, improved deployment frequency by <strong>5×</strong>.</li>
+    <li>Built and optimised <strong>50+ Azure DevOps pipelines</strong> and <strong>20+ repositories</strong>; release cycle moved weekly → daily.</li>
+    <li>Implemented IaC with Terraform across <strong>5+ Azure environments</strong>; reusable modules reduced provisioning time by <strong>70%</strong>; <strong>25+ Helm charts</strong> achieving <strong>99.9% deployment success</strong>.</li>
+    <li>Mentored <strong>5+ engineers</strong> via bi-weekly workshops (+35% productivity); engaged <strong>10+ stakeholder groups</strong> with <strong>95% CSAT</strong>.</li>
+  </ul>
+</div>
+
+<div class="role">
+  <div class="role-head"><span class="role-title">DevOps Consultant</span><span class="role-period">Oct 2022 – Feb 2023</span></div>
+  <div class="role-sub"><span class="role-company">Syntheia</span><span class="role-location">Sydney, AU (Remote)</span></div>
+  <ul>
+    <li>Delivered DevOps engagements for <strong>3+ enterprise clients</strong>; deployment cycles −60%, system reliability 99.95%.</li>
+    <li>Deployed <strong>5+ production EKS/AKS clusters</strong> across AWS and Azure with FluxCD GitOps reducing manual intervention by <strong>80%</strong>.</li>
+    <li>Authored <strong>15+ Helm charts</strong> reducing config errors by <strong>75%</strong>; produced <strong>30+ technical guides</strong>.</li>
+    <li>Automated multi-cloud Kubernetes provisioning with Terraform — <strong>12+ clusters</strong> deployed in &lt;30 min via reusable modules.</li>
+    <li>Established CI/CD with integrated security scanning achieving <strong>zero critical vulnerabilities</strong> in production.</li>
+  </ul>
+</div>
+
+<div class="role">
+  <div class="role-head"><span class="role-title">L3 DevOps Engineer</span><span class="role-period">Apr 2022 – Oct 2022</span></div>
+  <div class="role-sub"><span class="role-company">Rackspace Technology</span><span class="role-location">Cairo, Egypt</span></div>
+  <ul>
+    <li>Designed cloud architecture for <strong>10+ microservices</strong> on AWS reducing infrastructure cost by <strong>45%</strong>.</li>
+    <li>Automated deployment pipelines with Jenkins / GitHub Enterprise / Ansible: release time 4h → 30min, <strong>50+ deployments / week</strong>.</li>
+    <li>Migrated <strong>12 monolithic applications</strong> to microservices on EKS — scalability +70%.</li>
+    <li>Implemented security best practices across <strong>15+ AWS accounts</strong> achieving <strong>SOC2 compliance</strong>.</li>
+  </ul>
+</div>
+
+<div class="role">
+  <div class="role-head"><span class="role-title">L2 Professional Services Delivery Engineer</span><span class="role-period">Dec 2021 – Apr 2022</span></div>
+  <div class="role-sub"><span class="role-company">Rackspace Technology</span><span class="role-location">Alexandria, Egypt</span></div>
+  <ul>
+    <li>Delivered <strong>25+ AWS solutions</strong> for enterprise clients reducing deployment from weeks to hours.</li>
+    <li>IaC with Terraform / CloudFormation / Runway / Serverless framework — <strong>90% reduction</strong> in manual config errors; architected across <strong>20+ AWS services</strong> optimising cost by <strong>35%</strong>.</li>
+    <li>Migrated <strong>4 on-premises workloads</strong> to AWS reducing operational cost by <strong>40%</strong>.</li>
+  </ul>
+</div>
+
+<div class="role">
+  <div class="role-head"><span class="role-title">Technical Support Engineer</span><span class="role-period">Feb 2021 – Nov 2021</span></div>
+  <div class="role-sub"><span class="role-company">Dell Technologies</span><span class="role-location">Cairo, Egypt</span></div>
+  <ul>
+    <li>Resolved <strong>200+ monthly tickets</strong> for VBlock/VxBlock with <strong>95% first-call resolution</strong>; SLAs exceeded by <strong>20%</strong>.</li>
+    <li>Supported VMware (vSphere, NSX, vRealize), EMC storage (VMAX, VNX, Isilon), Cisco UCS / Nexus / MDS, Dell PowerEdge.</li>
+    <li>Managed VPLEX clusters and RecoverPoint replication for <strong>100+ TB data</strong> at <strong>99.9% availability</strong> across <strong>30+ deployments</strong>.</li>
+  </ul>
+</div>
+
+<div class="role">
+  <div class="role-head"><span class="role-title">Technical Support Engineer</span><span class="role-period">Aug 2020 – Feb 2021</span></div>
+  <div class="role-sub"><span class="role-company">Vodafone</span><span class="role-location">Cairo, Egypt</span></div>
+  <ul>
+    <li>Delivered 24/7 support for Telecom IN / Mediation infrastructure — <strong>99.9% uptime</strong> across <strong>50+ production nodes</strong>.</li>
+    <li>Administered Ericsson IN (CCN, OCC, SDP, AIR, VS, EMM); commissioned <strong>15+ new nodes</strong> (deployment time −30%).</li>
+    <li>Executed <strong>20+ quarterly upgrades</strong> supporting <strong>40% traffic growth</strong>; integrated SPLUNK monitoring across <strong>12 nodes</strong> (detection time −60%).</li>
+  </ul>
+</div>
+
+<div class="role">
+  <div class="role-head"><span class="role-title">Full Stack Developer</span><span class="role-period">May 2018 – Jul 2020</span></div>
+  <div class="role-sub"><span class="role-company">Echo Egypt</span><span class="role-location">Cairo, Egypt</span></div>
+  <ul>
+    <li>Built and deployed <strong>5+ desktop and web applications</strong> end-to-end achieving <strong>99% CSAT</strong> and <strong>35% faster delivery</strong>.</li>
+    <li>Enterprise solutions with C# / .NET / IIS / Microsoft AD / SSMS — <strong>+40% operational efficiency</strong>, <strong>100K+ daily transactions</strong>.</li>
+  </ul>
+</div>
+
+<!-- ────────────────────────── EDUCATION ──────────────────────── -->
+<h2>Education</h2>
+
+<div class="edu">
+  <div class="edu-head"><span class="edu-degree">Doctorate of Business Administration (DBA)</span><span class="edu-period">Jun 2025 – May 2027</span></div>
+  <div><span class="edu-school">Swiss School of Business and Management, Geneva</span> <span class="edu-detail">— Major: Artificial Intelligence · in progress</span></div>
+  <ul>
+    <li>Doctoral research on <strong>AI-enabled freelance platforms</strong>: dynamic talent matching, reputation systems, automated pricing, and the macroeconomics of LLM-augmented work.</li>
+    <li>Cohort: international executive DBA; research methods include mixed-method study design, longitudinal panel data, and grounded theory.</li>
+    <li>Working thesis bridges <em>cloud / DevOps automation</em> with platform-economy theory — how AI agents redistribute supply and demand in distributed engineering teams.</li>
+  </ul>
+</div>
+
+<div class="edu">
+  <div class="edu-head"><span class="edu-degree">Master of Business Administration (MBA), Digital Transformation</span><span class="edu-period">Oct 2023 – Dec 2024</span></div>
+  <div><span class="edu-school">Universitat de Barcelona</span> &nbsp;·&nbsp; <span class="edu-school">Zigurat Innovation &amp; Technology Business School</span> <span class="edu-detail">— joint dual-credential programme</span></div>
+  <ul>
+    <li>Concentrations: <strong>Cloud Strategy</strong>, <strong>DevOps Leadership</strong>, <strong>Digital Strategy</strong>, Operations Management, Innovation &amp; Entrepreneurship, Corporate Finance for Tech.</li>
+    <li>Capstone: a digital-transformation roadmap for a multinational enterprise — TCO modelling for cloud migration, KPI design for SRE adoption, and stakeholder change-management plan.</li>
+    <li>Delivered group case studies on AWS / Azure migration economics, OKR-driven engineering org design, and AI/ML productisation strategy.</li>
+  </ul>
+</div>
+
+<div class="edu">
+  <div class="edu-head"><span class="edu-degree">Bachelor's Degree, Communication and Computer Engineering</span><span class="edu-period">2012 – 2018</span></div>
+  <div><span class="edu-school">Cairo University, Faculty of Engineering</span> <span class="edu-detail">— 5-year integrated programme</span></div>
+  <ul>
+    <li>Core curriculum across <strong>signals &amp; systems, digital electronics, computer architecture, operating systems, networks, embedded systems, and software engineering</strong>.</li>
+    <li>Mastered <strong>C# · Java · Python · MATLAB · Assembly · SQL · VHDL</strong> through <strong>20+ hands-on projects</strong> spanning OS kernels, network protocol stacks, hardware-description synthesis, and full-stack web applications.</li>
+    <li>Completed <strong>270+ hours of industrial training</strong> with leading tech companies in Cairo; rotations in network operations, software QA, and embedded-systems R&amp;D.</li>
+    <li>Senior capstone: end-to-end system design integrating embedded hardware, a custom protocol layer, and a desktop control application — demonstrated cross-layer debugging and ownership.</li>
+  </ul>
+</div>
+
+<div class="edu">
+  <div class="edu-head"><span class="edu-degree">Scholarship · AWS Practical Data Scientist Academy</span><span class="edu-period">Oct 2021 – Mar 2022</span></div>
+  <div><span class="edu-school">Ministry of Communications and Information Technology (MCIT), Cairo, Egypt</span> <span class="edu-detail">— government-sponsored intensive scholarship</span></div>
+  <ul>
+    <li>Selective scholarship covering <strong>practical applied data science</strong> on AWS: SageMaker, Glue, Athena, Comprehend, Kinesis, QuickSight.</li>
+    <li>End-to-end ML lifecycle: feature engineering, model training and tuning, deployment as inference endpoints, monitoring and re-training automation.</li>
+    <li>Capstone projects built on real datasets; outputs evaluated on accuracy, cost-per-inference, and operational robustness.</li>
+  </ul>
+</div>
+
+<div class="edu">
+  <div class="edu-head"><span class="edu-degree">Scholarship · Datacenter Infrastructure &amp; Virtualization</span><span class="edu-period">Feb – Apr 2020</span></div>
+  <div><span class="edu-school">National Telecommunication Institute (NTI), Cairo, Egypt</span> <span class="edu-detail">— government-sponsored intensive scholarship</span></div>
+  <ul>
+    <li>Hands-on programme on enterprise datacenter operations: <strong>VMware vSphere / vCenter / NSX / vSAN</strong>, Cisco UCS compute, Nexus / MDS networking, Dell EMC storage (VMAX / VNX / Isilon).</li>
+    <li>Foundation that later underpinned Dell Technologies VBlock / VxBlock support work and the L3 cloud architect role at Rackspace.</li>
+  </ul>
+</div>
+
+<!-- ────────────────────────── CERTIFICATIONS ──────────────────── -->
+<h2>Certifications (40+)</h2>
+
+<div class="twocol">
+  <div>
+    <div class="cert-group">
+      <div class="cert-label">AWS — 11</div>
+      <div class="cert-list">Solutions Architect Professional · DevOps Engineer Professional · Solutions Architect Associate · Developer Associate · SysOps Administrator Associate · Cloud Practitioner · Security Specialty · Machine Learning Specialty · Data Analytics Specialty · Database Specialty · AI Practitioner</div>
+    </div>
+    <div class="cert-group">
+      <div class="cert-label">Kubestronaut · CNCF — 7</div>
+      <div class="cert-list">CKA · CKAD · CKS · KCNA · KCSA · Argo Project Associate · Prometheus Associate</div>
+    </div>
+    <div class="cert-group">
+      <div class="cert-label">Microsoft Azure — 6</div>
+      <div class="cert-list">Administrator Associate (AZ-104) · Fundamentals (AZ-900) · AI Fundamentals (AI-900) · Data Fundamentals (DP-900) · Security/Compliance/Identity Fundamentals (SC-900) · DevOps Solutions Expert (AZ-400)</div>
+    </div>
+    <div class="cert-group">
+      <div class="cert-label">Google Cloud — 2</div>
+      <div class="cert-list">Cloud Digital Leader · Generative AI Leader</div>
+    </div>
+  </div>
+  <div>
+    <div class="cert-group">
+      <div class="cert-label">VMware — 4</div>
+      <div class="cert-list">VCP-DCV (2020 & 2021) · VCP-NV (NSX-V & NSX-T) · Digital Business Transformation Associate · vSphere 6.7 Foundations</div>
+    </div>
+    <div class="cert-group">
+      <div class="cert-label">HashiCorp — 3</div>
+      <div class="cert-list">Terraform Associate · Vault Associate · Consul Associate</div>
+    </div>
+    <div class="cert-group">
+      <div class="cert-label">IBM — 5</div>
+      <div class="cert-list">Containers & Kubernetes Essentials · Docker Essentials · IBM Cloud Essentials · Applied Data Science with Python (Levels 1 & 2) · Deep Learning with TensorFlow / Accelerated DL with GPU</div>
+    </div>
+    <div class="cert-group">
+      <div class="cert-label">Other</div>
+      <div class="cert-list">Cisco CCNA · Dell Technologies Associate (ISM v4.0) · Rackspace MultiCloud Practitioner · Triplebyte Certified · Kaggle — 10+ ML/DL/Data micro-certificates</div>
+    </div>
+  </div>
+</div>
+
+<!-- ────────────────────────── SKILLS ────────────────────────── -->
+<h2>Technical Skills</h2>
+
+<div class="skill-line"><strong>Cloud platforms.</strong> AWS (Compute / Network / Storage / Database / Security) · Microsoft Azure · Google Cloud Platform · Firebase / App Hosting</div>
+<div class="skill-line"><strong>IaC & provisioning.</strong> Terraform · Pulumi · Terragrunt · env0 · Ansible · Packer · Vagrant · CDK · CDKTF · CDK8s · Projen · CloudFormation · Serverless (EB / SAM / Amplify) · Runway</div>
+<div class="skill-line"><strong>Containers & orchestration.</strong> Docker · Kubernetes · Helm · EKS · ECS · EKSCTL · AKS · GKE · Azure ACR · AWS ECR</div>
+<div class="skill-line"><strong>CI/CD & GitOps.</strong> Jenkins · GitHub Actions · GitLab CI · Azure Pipelines / DevOps / Boards / Repos · Tekton · Spinnaker · ArgoCD · FluxCD · JFrog · BitBucket</div>
+<div class="skill-line"><strong>Observability.</strong> Prometheus · AlertManager · Grafana · OpenTelemetry · ELK · CloudWatch · SPLUNK</div>
+<div class="skill-line"><strong>Security & compliance.</strong> HashiCorp Vault · AWS IAM / KMS / Security Groups · OPA · PSA · SOC2 · GDPR · vulnerability remediation · secret rotation</div>
+<div class="skill-line"><strong>Programming.</strong> PowerShell · Bash · PowerCLI · Python · TypeScript · JavaScript · C# · C / C++ · VB.NET · Groovy · HCL · YAML · JSON · HTML / CSS · PHP · SQL (MSSQL / MySQL)</div>
+<div class="skill-line"><strong>Virtualization & datacenter.</strong> VMware vSphere / vCenter · NSX-V / NSX-T · vSAN · Cisco UCS B/C-Series · Nexus / MDS Switches · Dell V/VxBlock · PowerEdge · EMC VMAX / VNX / Isilon / XIO · Unity · VPLEX / RecoverPoint</div>
+<div class="skill-line"><strong>Telecom.</strong> Ericsson IN (CCN, OCC, SDP, AIR, VS, EMM) · GGSNs · MSCs · Mediation Nodes · SPLUNK telemetry</div>
+<div class="skill-line"><strong>Operating systems & networking.</strong> Linux (RHEL / Ubuntu / Amazon Linux) · Windows Server 2016+ · Microsoft AD · IIS · SSMS · DNS · DHCP · TCP/IP · VPN · Firewall</div>
+
+<!-- ────────────────────────── COMMUNITY ────────────────────────── -->
+<h2>Community & Volunteer Involvement</h2>
+
+<div class="role">
+  <div class="role-head"><span class="role-title">AWS Authorized Instructor (AAI)</span><span class="role-period">Jun 2023 – Present</span></div>
+  <ul>
+    <li>Authorized AWS instructor delivering <strong>5+ official training courses</strong> on cloud architecture, DevOps, serverless.</li>
+    <li>Completed <strong>40+ hours</strong> of certification covering <strong>20+ AWS services</strong> (Lambda, ECS/EKS, CloudFormation, automation).</li>
+  </ul>
+</div>
+
+<div class="role">
+  <div class="role-head"><span class="role-title">AWS Certification SME / Exam Writer</span><span class="role-period">Apr 2022 – Present</span></div>
+  <ul>
+    <li>Reviewed and validated <strong>10+ AWS certification exam questions</strong> for Solutions Architect and DevOps Engineer paths.</li>
+    <li>Contributed to <strong>5 exam development workshops</strong> across <strong>3 certification tracks</strong>.</li>
+  </ul>
+</div>
+
+<div class="role">
+  <div class="role-head"><span class="role-title">AWS Community Builder — Cloud / DevOps</span><span class="role-period">Mar 2022 – Present</span></div>
+  <ul>
+    <li>Selected for the Cloud / DevOps track among <strong>500+ global applicants</strong>.</li>
+    <li>Engaged <strong>1,000+ community members</strong>; contributed <strong>5+ technical articles</strong> on serverless, container orchestration, IaC.</li>
+  </ul>
+</div>
+
+<!-- ────────────────────────── LANGUAGES ───────────────────────── -->
+<h2>Languages</h2>
+<div class="skill-line">
+  <strong>Arabic.</strong> Native or bilingual proficiency &nbsp; · &nbsp;
+  <strong>English.</strong> Professional working proficiency &nbsp; · &nbsp;
+  <strong>French.</strong> Elementary
+</div>
+
+<footer><code>git commit -m "Everything as a Code"</code> · Let's automate the future together — BYOD</footer>
+
+</body>
+</html>

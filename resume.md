@@ -116,8 +116,9 @@ February 2020 – April 2020
 IGCSE  
 2009 – 2011  
 
-# Certifications
+# Certifications (40+)
 
+**AWS — 11 certifications**
 - AWS Certified Cloud Practitioner  
 - AWS Certified Solutions Architect – Associate & Professional  
 - AWS Certified DevOps Engineer – Professional  
@@ -127,21 +128,46 @@ IGCSE
 - AWS Certified Data Analytics – Specialty  
 - AWS Certified Database – Specialty  
 - AWS Certified Security – Specialty  
-- Microsoft Certified: Azure Administrator Associate  
-- Microsoft Certified: Azure AI Fundamentals  
-- Microsoft Certified: Azure Data Fundamentals  
-- Microsoft Certified: Security, Compliance, and Identity Fundamentals  
-- VMware Certified Professional – Data Center Virtualization & Network Virtualization 2020/2021  
-- Kubernetes Certified Administrator (CKA)  
-- Kubernetes Certified Application Developer (CKAD)  
-- Kubernetes Certified Security Specialist (CKS)  
+- AWS Certified AI Practitioner  
+
+**Microsoft Azure — 6 certifications**
+- Azure Administrator Associate (AZ-104)  
+- Azure Fundamentals (AZ-900)  
+- Azure AI Fundamentals (AI-900)  
+- Azure Data Fundamentals (DP-900)  
+- Security, Compliance, and Identity Fundamentals (SC-900)  
+- Azure DevOps Solutions (AZ-400, Expert track)  
+
+**Kubernetes / CNCF — Kubestronaut (7 certifications)**
+- Certified Kubernetes Administrator (CKA)  
+- Certified Kubernetes Application Developer (CKAD)  
+- Certified Kubernetes Security Specialist (CKS)  
 - Kubernetes and Cloud Native Associate (KCNA)  
-- Cisco Certified Network Associate (CCNA)  
-- Dell Technologies Associate - Information Storage and Management V4.0  
-- IBM Data Science and Deep Learning Series (Multiple badges)  
-- Rackspace MultiCloud Practitioner  
-- Triplebyte Certified  
-- Multiple Kaggle Data Science and Machine Learning Certifications  
+- Kubernetes and Cloud Native Security Associate (KCSA)  
+- Argo Project Associate (CNCF)  
+- Prometheus Associate (CNCF)  
+
+**Google Cloud — 2 certifications**
+- Google Cloud Digital Leader  
+- Google Generative AI Leader  
+
+**VMware — 4 certifications**
+- VCP-DCV — Data Center Virtualization (2020 & 2021)  
+- VCP-NV — Network Virtualization (NSX-V & NSX-T)  
+- VMware Digital Business Transformation Associate  
+- VMware vSphere 6.7 Foundations  
+
+**HashiCorp — 3 certifications**
+- Terraform Associate  
+- Vault Associate  
+- Consul Associate  
+
+**Cisco** — CCNA — Certified Network Associate  
+**Dell Technologies** — Associate: Information Storage & Management v4.0  
+**IBM** — Data Science & Deep Learning series (5+ badges)  
+**Rackspace** — MultiCloud Practitioner  
+**Triplebyte** — Certified  
+**Kaggle** — 10+ data-science / ML / DL micro-certifications  
 
 # Skills
 
